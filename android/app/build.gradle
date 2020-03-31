@@ -129,7 +129,7 @@ android {
 
     defaultConfig {
         applicationId "com.iot"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 18
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -179,6 +179,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-ble-plx')
+    implementation project(':react-native-image-picker')
     implementation project(':react-native-vector-icons')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules

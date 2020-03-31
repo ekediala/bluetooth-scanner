@@ -8,24 +8,15 @@
  * @format
  */
 
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-
-import Home from './src/components/home/Home';
 import {Provider} from 'react-redux';
 import React from 'react';
+import Scanner from './src/components/home/components/Scanner';
 import store from './src/store';
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <Home />
+      <Scanner />
     </Provider>
   );
 };

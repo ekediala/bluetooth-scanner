@@ -1,7 +1,7 @@
-export const CONNECT = 'connect';
+export const REQUEST_PERMISSION = 'Scan';
 
-export const SAVE_CONNECTION = 'save connection';
+export const POPULATE_FOUND_DEVICES = 'Populate found devices';
 
-export const PAIR = "Pair";
+export const TOGGLE_SCANNING = 'Toggle loading';
 
-export const SEND = "Send";
+export const SET_CHOSEN_DEVICE = 'Choose Device';
