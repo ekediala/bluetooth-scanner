@@ -19,6 +19,7 @@ import {
 import {Button, Header, ListItem, Text} from 'react-native-elements';
 import {
   createPopulateDevicesAction,
+  createRequestPermissionAction,
   createToggleLoadingAction,
 } from '../../../store/actions';
 import {useDispatch, useSelector} from 'react-redux';
@@ -60,6 +61,7 @@ const Scanner = () => {
   });
 
   useEffect(() => {
+    dispatch(createRequestPermissionAction());
     scanForDevices();
     return () => manager.destroy();
   }, []);
